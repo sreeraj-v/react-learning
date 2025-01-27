@@ -1,23 +1,9 @@
-const heading = React.createElement("h3", { id: "love" }, "hello sirr!!!!!!!");
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const title = React.createElement("h3",{id:'sj'},'im just poor not ugly')
 
-root.render(heading);
+const root = ReactDOM.createRoot(document.getElementById("root"))
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", {}, "hello parent to child"),
-    React.createElement("h2", {}, "hello parent to child 2"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h3", {}, "neated h3"),
-    React.createElement("h4", {}, "nested h4"),
-  ]),
-]);
+root.render(title)
 
-const rooter = ReactDOM.createRoot(document.getElementById("rooter"));
-
-rooter.render(parent);
-
-console.log(parent);
-console.log(heading);
