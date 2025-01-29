@@ -6,9 +6,17 @@
   <title>Document</title>
 </head>
 <body>
- <div id="parent">
- </div>
-  
+  <div id="root">
+
+  </div>
+
   <script type="module" src="./app.js"></script>
+  <script>
+    const heading = document.createElement("h1")
+    heading.innerHTML = "hi sreeraj"
+
+    const root = document.getElementById("root")
+    root.appendChild(heading)
+  </script>
 </body>
 </html>
